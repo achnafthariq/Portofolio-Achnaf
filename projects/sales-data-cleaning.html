@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Sales Data Cleaning | Achnaf Thariq
+    </title>
+
+    <meta
+        name="description"
+        content="Sales Data Cleaning case study by Achnaf Thariq using Microsoft Excel."
+    >
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header">
+
+        <nav class="navbar container">
+
+            <a href="../index.html" class="logo">
+                AT.
+            </a>
+
+            <div class="case-nav">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="../index.html#projects">
+                    Projects
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+        <!-- PROJECT HERO -->
+        <section class="case-hero">
+
+            <div class="container case-container">
+
+                <a
+                    href="../index.html#projects"
+                    class="back-link"
+                >
+                    ← Back to Projects
+                </a>
+
+                <p class="section-label">
+                    EXCEL • DATA CLEANING
+                </p>
+
+                <h1>
+                    Sales Data Cleaning
+                </h1>
+
+                <p class="case-intro">
+                    A practice case study focused on transforming
+                    raw sales data into a cleaner, more consistent,
+                    and analysis-ready dataset using Microsoft Excel.
+                </p>
+
+
+                <div class="case-meta">
+
+                    <div>
+                        <span>TYPE</span>
+                        <strong>Practice Project</strong>
+                    </div>
+
+                    <div>
+                        <span>TOOL</span>
+                        <strong>Microsoft Excel</strong>
+                    </div>
+
+                    <div>
+                        <span>FOCUS</span>
+                        <strong>Data Cleaning</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- OVERVIEW -->
+        <section class="section">
+
+            <div class="container case-container">
+
+                <p class="section-label">
+                    01 — OVERVIEW
+                </p>
+
+                <h2 class="case-heading">
+                    Project overview
+                </h2>
+
+                <p class="case-text">
+                    The dataset contains raw sales records that
+                    require cleaning and standardization before
+                    they can be used for reporting and further
+                    analysis.
+                </p>
+
+                <p class="case-text">
+                    The purpose of this project is to demonstrate
+                    a structured data-cleaning workflow using
+                    commonly available Microsoft Excel tools
+                    and functions.
+                </p>
+
+                <p class="case-text">
+                    This project uses a synthetic sales dataset created
+                    for hands-on Excel data-cleaning practice. The objective
+                    was to simulate common data-quality issues found in
+                    real-world spreadsheet workflows.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PROBLEM -->
+        <section class="section section-alt">
+
+            <div class="container case-container">
+
+                <p class="section-label">
+                    02 — THE PROBLEM
+                </p>
+
+                <h2 class="case-heading">
+                    Raw data is rarely ready for analysis.
+                </h2>
+
+                <p class="case-text">
+                    Before analysis, the dataset must first be
+                    checked for inconsistencies and formatting
+                    problems that could affect reporting accuracy.
+                </p>
+
+
+                <div class="problem-grid">
+
+                    <div class="problem-card">
+                        <span>01</span>
+                        <h3>Extra Spaces</h3>
+                        <p>
+                            Unnecessary spaces can create
+                            inconsistent text values.
+                        </p>
+                    </div>
+
+                    <div class="problem-card">
+                        <span>02</span>
+                        <h3>Inconsistent Text</h3>
+                        <p>
+                            Capitalization and naming conventions
+                            may differ across records.
+                        </p>
+                    </div>
+
+                    <div class="problem-card">
+                        <span>03</span>
+                        <h3>Duplicate Records</h3>
+                        <p>
+                            Duplicate entries can distort
+                            summaries and calculations.
+                        </p>
+                    </div>
+
+                    <div class="problem-card">
+                        <span>04</span>
+                        <h3>Formatting Issues</h3>
+                        <p>
+                            Dates, numbers, and text fields may
+                            use inconsistent formats.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- APPROACH -->
+        <section class="section">
+
+            <div class="container case-container">
+
+                <p class="section-label">
+                    03 — MY APPROACH
+                </p>
+
+                <h2 class="case-heading">
+                    A structured cleaning workflow.
+                </h2>
+
+
+                <div class="workflow">
+
+                    <div class="workflow-step">
+                        <span>01</span>
+
+                        <div>
+                            <h3>Prepare the Dataset</h3>
+
+                            <p>
+                                Improved worksheet readability by using AutoFit
+                                for rows and columns before starting the
+                                data-cleaning process.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="workflow-step">
+                        <span>02</span>
+
+                        <div>
+                            <h3>Standardize Text</h3>
+
+                            <p>
+                                Used Find & Replace, LOWER, TRIM, and PROPER
+                                to remove unnecessary information, spaces,
+                                and inconsistent capitalization.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="workflow-step">
+                        <span>03</span>
+
+                        <div>
+                            <h3>Restructure the Data</h3>
+
+                            <p>
+                                Used Text to Columns to separate combined
+                                Department and Region information into
+                                individual fields.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="workflow-step">
+                        <span>04</span>
+
+                        <div>
+                            <h3>Handle Data Quality Issues</h3>
+
+                            <p>
+                                Removed duplicate records, identified blank cells
+                                using Go To Special, and filled missing values
+                                consistently.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="workflow-step">
+                        <span>05</span>
+
+                        <div>
+                            <h3>Handle Formula Errors</h3>
+
+                            <p>
+                                Applied IFERROR to prevent calculation errors
+                                from affecting the final dataset and reporting.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="workflow-step">
+                        <span>06</span>
+
+                        <div>
+                            <h3>Finalize the Output</h3>
+
+                            <p>
+                                Applied consistent formatting and removed
+                                worksheet gridlines to create a cleaner
+                                presentation-ready dataset.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- TECHNIQUES -->
+        <section class="section section-alt">
+
+            <div class="container case-container">
+
+                <p class="section-label">
+                    04 — TECHNIQUES
+                </p>
+
+                <h2 class="case-heading">
+                    Excel tools used
+                </h2>
+
+                <div class="case-tags">
+
+                    <span>AutoFit</span>
+                    <span>Find & Replace</span>
+                    <span>LOWER</span>
+                    <span>TRIM</span>
+                    <span>PROPER</span>
+                    <span>Text to Columns</span>
+                    <span>Remove Duplicates</span>
+                    <span>Go To Special</span>
+                    <span>IFERROR</span>
+                    <span>Paste Values</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- BEFORE AFTER -->
+        <section class="section">
+
+            <div class="container case-container">
+
+                <p class="section-label">
+                    05 — BEFORE & AFTER
+                </p>
+
+                <h2 class="case-heading">
+                    From raw to structured data.
+                </h2>
+
+                <p class="case-text">
+                    Screenshots of the actual dataset will be
+                    added here after the Excel project is completed.
+                </p>
+
+
+                <div class="comparison-grid">
+
+                    <div class="comparison-card">
+
+                        <p>BEFORE</p>
+
+                        <img
+                            src="../images/projects/raw-sales-data.png"
+                            alt="Raw sales dataset before data cleaning"
+                            class="case-image"
+                        >
+
+                    </div>
+
+                    <div class="comparison-card">
+
+                        <p>AFTER</p>
+
+                        <img
+                            src="../images/projects/clean-sales-data.png"
+                            alt="Sales dataset after data cleaning"
+                            class="case-image"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CLEANING SUMMARY -->
+        <section class="section">
+
+            <div class="container case-container">
+
+                <p class="section-label">
+                    06 — CLEANING SUMMARY
+                </p>
+
+                <h2 class="case-heading">
+                    What changed?
+                </h2>
+
+                <div class="result-grid">
+
+                    <div class="result-card">
+                        <strong>93</strong>
+                        <span>Raw Records</span>
+                    </div>
+
+                    <div class="result-card">
+                        <strong>90</strong>
+                        <span>Unique Records</span>
+                    </div>
+
+                    <div class="result-card">
+                        <strong>3</strong>
+                        <span>Duplicates Removed</span>
+                    </div>
+
+                    <div class="result-card">
+                        <strong>8</strong>
+                        <span>Missing Payments Handled</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RESULT -->
+        <section class="section section-alt">
+
+            <div class="container case-container">
+
+                <p class="section-label">
+                    07 — RESULT
+                </p>
+
+                <h2 class="case-heading">
+                    An analysis-ready dataset.
+                </h2>
+
+                <p class="case-text">
+                    The cleaning process transformed the original dataset
+                    into a more consistent and structured format by
+                    standardizing text values, separating combined fields,
+                    removing duplicate records, handling blank cells,
+                    and preventing formula errors.
+                </p>
+
+                <p class="case-text">
+                    The resulting dataset is easier to read, validate,
+                    and use for further analysis, Pivot Tables,
+                    reporting, and dashboard development.
+                </p>
+
+
+                <div class="next-project">
+
+                    <p>
+                        NEXT PROJECT
+                    </p>
+
+                    <h3>
+                        Sales Dashboard & Reporting →
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <p>
+                © <span id="year"></span> Achnaf Thariq
+            </p>
+
+            <a href="../index.html">
+                ← Back to Portfolio
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
