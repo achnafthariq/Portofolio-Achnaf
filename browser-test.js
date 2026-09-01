@@ -6,7 +6,7 @@ export const options = {
     browser_test: {
       executor: 'shared-iterations',
       vus: 1,
-      iterations: 5,
+      iterations: 1,
       options: {
         browser: {
           type: 'chromium',
@@ -32,7 +32,8 @@ export default async function () {
   });
 
   try {
-    const homeResponse = await page.goto(
+    // 1. Homepage
+    const home = await page.goto(
       'https://www.achnafthariq.com/',
       {
         waitUntil: 'load',
@@ -40,30 +41,80 @@ export default async function () {
       }
     );
 
-    check(homeResponse, {
+    check(home, {
       'homepage status is 200': (r) =>
         r !== null && r.status() === 200,
     });
 
+    // 2. Buka project
     const projectLink = page
-      .locator('a[href="projects/sales-data-cleaning.html"]')
-      .first();
+        .locator('a[href*="sales-data-cleaning"]')
+        .first();
+
+    const projectHref = await projectLink.getAttribute('href');
+    console.log(`PROJECT LINK = ${projectHref}`);
 
     await projectLink.click();
 
     await page.waitForURL(
-      /\/projects\/sales-data-cleaning\/?$/,
-      {
-        timeout: 30000,
-      }
-    );
+        /\/projects\/sales-data-cleaning\/?$/,
+        { timeout: 30000 }
+        );
 
     check(page.url(), {
-      'project page opened': (url) =>
-        url.includes('/projects/sales-data-cleaning'),
+        'project page opened': (url) =>
+            url.includes('/projects/sales-data-cleaning'),
     });
 
-    await page.waitForTimeout(1500);
+        // 3. Kembali ke homepage
+        await page.goto(
+        'https://www.achnafthariq.com/',
+        {
+            waitUntil: 'load',
+            timeout: 30000,
+        }
+        );
+
+    // 4. Services
+    const servicesLink = page
+      .locator('a[href="#services"]')
+      .first();
+
+    await servicesLink.click();
+    await page.waitForTimeout(500);
+
+    check(page.url(), {
+      'services navigation works': (url) =>
+        url.includes('#services'),
+    });
+
+    // 5. Contact
+    const contactLink = page
+      .locator('a[href="#contact"]')
+      .first();
+
+    await contactLink.click();
+    await page.waitForTimeout(500);
+
+    check(page.url(), {
+      'contact navigation works': (url) =>
+        url.includes('#contact'),
+    });
+
+    // 6. Periksa email publik
+    const emailButton = page
+      .locator('a[href^="mailto:"]')
+      .first();
+
+    const emailHref =
+      await emailButton.getAttribute('href');
+
+    console.log(`CONTACT EMAIL = ${emailHref}`);
+
+    check(emailHref, {
+      'contact email is correct': (href) =>
+        href === 'mailto:contact@achnafthariq.com',
+    });
 
   } finally {
     await page.close();
