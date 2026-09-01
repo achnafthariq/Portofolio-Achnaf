@@ -26,25 +26,13 @@ export default async function () {
   const page = await browser.newPage();
 
   page.on('response', (response) => {
-    const status = response.status();
-
-    if (status >= 400) {
-        console.log(`HTTP ${status} | ${response.url()}`);
+    if (response.status() >= 400) {
+      console.log(`HTTP ${response.status()} | ${response.url()}`);
     }
-    });
-
-  page.on('requestfailed', (request) => {
-    const failure = request.failure();
-
-    console.log(
-      `FAILED | ${request.resourceType()} | ${request.url()} | ${
-        failure ? failure.errorText : 'unknown'
-      }`
-    );
   });
 
   try {
-    const response = await page.goto(
+    const homeResponse = await page.goto(
       'https://www.achnafthariq.com/',
       {
         waitUntil: 'load',
@@ -52,13 +40,30 @@ export default async function () {
       }
     );
 
-    check(response, {
+    check(homeResponse, {
       'homepage status is 200': (r) =>
         r !== null && r.status() === 200,
     });
 
-    // Beri waktu resource asynchronous selesai
-    await page.waitForTimeout(2000);
+    const projectLink = page
+      .locator('a[href="projects/sales-data-cleaning.html"]')
+      .first();
+
+    await projectLink.click();
+
+    await page.waitForURL(
+      /\/projects\/sales-data-cleaning\/?$/,
+      {
+        timeout: 30000,
+      }
+    );
+
+    check(page.url(), {
+      'project page opened': (url) =>
+        url.includes('/projects/sales-data-cleaning'),
+    });
+
+    await page.waitForTimeout(1500);
 
   } finally {
     await page.close();
