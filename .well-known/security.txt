@@ -1,0 +1,4 @@
+Contact: mailto:fanhcata@gmail.com
+Canonical: https://www.achnafthariq.com/.well-known/security.txt
+Expires: 2027-09-01T00:00:00Z
+Preferred-Languages: id, en
