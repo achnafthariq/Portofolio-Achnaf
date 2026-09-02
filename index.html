@@ -102,11 +102,16 @@
 
     <!-- NAVBAR -->
     <header class="header">
-        <nav class="navbar container">
+        <nav class="navbar container" aria-label="Primary navigation">
+            <a href="#home" class="logo" aria-label="Achnaf Thariq home">AT.</a>
 
-            <a href="#home" class="logo">AT.</a>
-
-            <button class="menu-button" id="menuButton">
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navLinks"
+            >
                 ☰
             </button>
 
@@ -118,517 +123,310 @@
                 <a href="#services">Services</a>
                 <a href="#contact">Contact</a>
             </div>
-
         </nav>
     </header>
-
 
     <main>
 
         <!-- HERO -->
         <section class="hero" id="home">
-
             <div class="container hero-content">
+                <p class="eyebrow">Economics → Research → Data Analytics</p>
 
-                <p class="eyebrow">DATA • RESEARCH • ECONOMICS</p>
+                <h1>Hi, I'm <span>Achnaf Thariq.</span></h1>
 
-                <h1>
-                    Hi, I'm <span>Achnaf Thariq.</span>
-                </h1>
-
-                <h2>
-                    I turn data and research into
-                    structured, useful, and understandable insights.
-                </h2>
+                <h2>I turn raw data and research into structured, actionable insights.</h2>
 
                 <p class="hero-description">
-                    I work on data processing, Excel-based reporting,
-                    research support, survey data, and analytical projects
-                    with a focus on accuracy, structure, and practical results.
+                    My background is in economics, with hands-on experience collecting,
+                    validating, and processing data — from export-import datasets at KNEKS
+                    to field surveys and community research. I'm currently building SQL,
+                    Power BI, and Python skills to strengthen that foundation for data analytics.
                 </p>
 
                 <div class="hero-buttons">
-
-                    <a href="#projects" class="button primary">
-                        View My Projects
-                    </a>
-
-                    <a href="#experience" class="button secondary">
-                        My Experience
-                    </a>
-                
-                    <a href="#contact" class="button secondary">
-                        Contact Me
-                    </a>
-
+                    <a href="#projects" class="button primary">View My Projects</a>
+                    <a href="#contact" class="button secondary">Get in Touch</a>
                 </div>
 
-            </div>
+                <svg class="hero-graphic" viewBox="0 0 780 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="heroGraphicTitle heroGraphicDesc">
+                    <title id="heroGraphicTitle">From raw data to useful insight</title>
+                    <desc id="heroGraphicDesc">A three-stage illustration showing messy raw data becoming a clean table and then a clear analytical chart.</desc>
 
+                    <!-- RAW DATA -->
+                    <g transform="translate(8 20)">
+                        <text x="0" y="0" class="hero-graphic-label field-label">RAW DATA</text>
+                        <rect x="0" y="18" width="170" height="118" rx="10" class="hero-panel raw-panel"/>
+                        <line x1="18" y1="46" x2="132" y2="46" class="raw-line"/>
+                        <line x1="18" y1="66" x2="148" y2="66" class="raw-line short"/>
+                        <line x1="18" y1="86" x2="104" y2="86" class="raw-line"/>
+                        <line x1="18" y1="106" x2="145" y2="106" class="raw-line short"/>
+                        <circle cx="144" cy="46" r="5" class="raw-dot"/>
+                        <path d="M118 80 l10 10 M128 80 l-10 10" class="raw-error"/>
+                        <circle cx="154" cy="106" r="5" class="raw-dot"/>
+                    </g>
+
+                    <!-- ARROW 1 -->
+                    <g class="flow-arrow" transform="translate(200 87)">
+                        <line x1="0" y1="0" x2="62" y2="0"/>
+                        <path d="M52 -8 L62 0 L52 8"/>
+                    </g>
+
+                    <!-- CLEAN DATA -->
+                    <g transform="translate(286 20)">
+                        <text x="0" y="0" class="hero-graphic-label clean-label">CLEAN DATA</text>
+                        <rect x="0" y="18" width="170" height="118" rx="10" class="hero-panel clean-panel"/>
+                        <line x1="16" y1="48" x2="154" y2="48" class="table-line"/>
+                        <line x1="16" y1="74" x2="154" y2="74" class="table-line"/>
+                        <line x1="16" y1="100" x2="154" y2="100" class="table-line"/>
+                        <line x1="62" y1="30" x2="62" y2="122" class="table-line"/>
+                        <line x1="112" y1="30" x2="112" y2="122" class="table-line"/>
+                        <rect x="18" y="34" width="33" height="7" rx="3.5" class="table-cell"/>
+                        <rect x="70" y="34" width="30" height="7" rx="3.5" class="table-cell"/>
+                        <rect x="120" y="34" width="24" height="7" rx="3.5" class="table-cell"/>
+                    </g>
+
+                    <!-- ARROW 2 -->
+                    <g class="flow-arrow" transform="translate(480 87)">
+                        <line x1="0" y1="0" x2="62" y2="0"/>
+                        <path d="M52 -8 L62 0 L52 8"/>
+                    </g>
+
+                    <!-- INSIGHT -->
+                    <g transform="translate(566 20)">
+                        <text x="0" y="0" class="hero-graphic-label insight-label">INSIGHT</text>
+                        <rect x="0" y="18" width="196" height="118" rx="10" class="hero-panel insight-panel"/>
+                        <line x1="22" y1="112" x2="174" y2="112" class="chart-axis"/>
+                        <rect x="35" y="82" width="22" height="30" rx="3" class="chart-bar bar-1"/>
+                        <rect x="69" y="66" width="22" height="46" rx="3" class="chart-bar bar-2"/>
+                        <rect x="103" y="48" width="22" height="64" rx="3" class="chart-bar bar-3"/>
+                        <rect x="137" y="30" width="22" height="82" rx="3" class="chart-bar bar-4"/>
+                        <circle cx="148" cy="30" r="5" class="insight-dot"/>
+                        <path d="M148 30 L170 23" class="insight-pointer"/>
+                    </g>
+                </svg>
+            </div>
         </section>
 
+        <!-- DATA WORKFLOW -->
+        <section class="pipeline" aria-label="How I work with data">
+            <div class="container">
+                <p class="pipeline-caption">How I work with data</p>
+                <div class="pipeline-steps">
+                    <div class="pipeline-step field"><span class="dot"></span>Collect</div>
+                    <div class="pipeline-step field"><span class="dot"></span>Clean</div>
+                    <div class="pipeline-step data"><span class="dot"></span>Analyze</div>
+                    <div class="pipeline-step data"><span class="dot"></span>Communicate</div>
+                </div>
+            </div>
+        </section>
 
         <!-- ABOUT -->
         <section class="section" id="about">
-
             <div class="container">
-
-                <p class="section-label">ABOUT ME</p>
-
-                <h2 class="section-title">
-                    From raw information to meaningful insights.
-                </h2>
+                <p class="section-label">ABOUT</p>
+                <h2 class="section-title">From raw information to meaningful insights.</h2>
 
                 <div class="about-grid">
-
-                    <div>
-
+                    <div class="about-copy">
                         <p>
-                            I'm Achnaf Thariq, and I have experience working
-                            with data, research, surveys, and field-based projects.
-                            My work includes collecting and organizing information,
-                            cleaning datasets, supporting research processes, and
-                            preparing structured outputs for analysis and reporting.
+                            I'm Achnaf Thariq, with experience working across data, research,
+                            surveys, and field-based projects. My work includes collecting and
+                            organizing information, cleaning datasets, validating data, supporting
+                            research processes, and preparing structured outputs for analysis and reporting.
                         </p>
-
                         <p>
-                            My academic background in economics has strengthened
-                            my interest in understanding data not only as numbers,
-                            but also as information that can help explain
-                            real-world problems and support better decisions.
+                            My economics background helps me look beyond numbers and connect data
+                            with the real-world context behind it — whether the subject is markets,
+                            communities, industry information, or research findings.
                         </p>
-
                         <p>
-                            I enjoy learning new tools and continuously improving
-                            my skills in data processing, spreadsheet analysis,
-                            research, and analytical work.
+                            I'm now strengthening that foundation with a more technical analytics toolkit,
+                            while continuing to build portfolio projects that demonstrate practical work.
                         </p>
-
                     </div>
-
 
                     <div class="skills">
+                        <div class="skill-group">
+                            <p class="skill-group-title field-title">Research &amp; Fieldwork</p>
+                            <div class="skill-group-items">
+                                <span class="skill field-skill">Field Research</span>
+                                <span class="skill field-skill">Survey Data</span>
+                                <span class="skill field-skill">Secondary Data Research</span>
+                                <span class="skill field-skill">Research</span>
+                            </div>
+                        </div>
 
-                        <div class="skill">Microsoft Excel</div>
+                        <div class="skill-group">
+                            <p class="skill-group-title data-title">Data &amp; Reporting</p>
+                            <div class="skill-group-items">
+                                <span class="skill data-skill">Microsoft Excel</span>
+                                <span class="skill data-skill">Data Cleaning</span>
+                                <span class="skill data-skill">Data Validation</span>
+                                <span class="skill data-skill">Data Processing</span>
+                                <span class="skill data-skill">Data Analysis</span>
+                                <span class="skill data-skill">Reporting</span>
+                            </div>
+                        </div>
 
-                        <div class="skill">Data Cleaning</div>
-
-                        <div class="skill">Data Processing</div>
-
-                        <div class="skill">Data Analysis</div>
-
-                        <div class="skill">Research</div>
-
-                        <div class="skill">Survey Data</div>
-
-                        <div class="skill">Data Validation</div>
-
-                        <div class="skill">Reporting</div>
-
-                        <div class="skill">Field Research</div>
-
-                        <div class="skill">Secondary Data Research</div>
-
+                        <div class="skill-group learning-group">
+                            <p class="skill-group-title learning-title">Currently Learning</p>
+                            <div class="skill-group-items">
+                                <span class="skill learning-skill">SQL <small>In progress</small></span>
+                                <span class="skill learning-skill">Power BI <small>In progress</small></span>
+                                <span class="skill learning-skill">Python <small>Planned</small></span>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
 
         <!-- EXPERIENCE -->
         <section class="section section-alt" id="experience">
-
             <div class="container">
-
                 <p class="section-label">EXPERIENCE</p>
-
-                <h2 class="section-title">
-                    Experience in research, data, and fieldwork.
-                </h2>
+                <h2 class="section-title">Experience in research, data, and fieldwork.</h2>
 
                 <div class="timeline">
-
-                    <!-- EXPERIENCE 1 -->
-                    <div class="timeline-item">
-
+                    <article class="timeline-item">
+                        <span class="stage-tag field">Field Research</span>
                         <div class="experience-header">
-
                             <div>
-                                <p class="timeline-date">
-                                    AUG 2025 — DEC 2025
-                                </p>
-
-                                <h3>
-                                    Field Researcher
-                                </h3>
-
-                                <p class="experience-company">
-                                    IPB University — Trans Patriot 2025
-                                </p>
+                                <p class="timeline-date">AUG 2025 — DEC 2025</p>
+                                <h3>Field Researcher</h3>
+                                <p class="experience-company">IPB University — Trans Patriot 2025</p>
                             </div>
-
-                            <span class="experience-location">
-                                Fakfak, Indonesia
-                            </span>
-
+                            <span class="experience-location">Fakfak, Indonesia</span>
                         </div>
-
                         <ul class="experience-list">
-
-                            <li>
-                                Conducted field research across communities
-                                in Fakfak Timur through interviews,
-                                surveys, and field observations.
-                            </li>
-
-                            <li>
-                                Supported focus group discussions and
-                                documented community perceptions,
-                                expectations, and social issues.
-                            </li>
-
-                            <li>
-                                Organized and processed population
-                                and field data for research reporting.
-                            </li>
-
-                            <li>
-                                Contributed to research documentation,
-                                data validation, and preparation of findings.
-                            </li>
-
+                            <li>Conducted field research across communities in Fakfak Timur through interviews, surveys, and field observations.</li>
+                            <li>Supported focus group discussions and documented community perceptions, expectations, and social issues.</li>
+                            <li>Organized and processed population and field data for research reporting.</li>
+                            <li>Contributed to research documentation, data validation, and preparation of findings.</li>
                         </ul>
+                    </article>
 
-                    </div>
-
-
-                    <!-- EXPERIENCE 2 -->
-                    <div class="timeline-item">
-
+                    <article class="timeline-item">
+                        <span class="stage-tag data">Data Analysis</span>
                         <div class="experience-header">
-
                             <div>
-                                <p class="timeline-date">
-                                    AUG 2024 — JAN 2025
-                                </p>
-
-                                <h3>
-                                    Data Analyst Intern
-                                </h3>
-
-                                <p class="experience-company">
-                                    National Committee for Islamic Economy and Finance (KNEKS)
-                                </p>
+                                <p class="timeline-date">AUG 2024 — JAN 2025</p>
+                                <h3>Data Analyst Intern</h3>
+                                <p class="experience-company">National Committee for Islamic Economy and Finance (KNEKS)</p>
                             </div>
-
-                            <span class="experience-location">
-                                Jakarta, Indonesia
-                            </span>
-
+                            <span class="experience-location">Jakarta, Indonesia</span>
                         </div>
-
                         <ul class="experience-list">
-
-                            <li>
-                                Collected, organized, and validated
-                                export-import data for research
-                                and analytical purposes.
-                            </li>
-
-                            <li>
-                                Supported the preparation of research
-                                materials, presentations, and
-                                policy-related reports.
-                            </li>
-
-                            <li>
-                                Organized datasets and industry information
-                                to improve consistency and usability
-                                for further analysis.
-                            </li>
-
-                            <li>
-                                Supported KNEKS activities at Trade Expo
-                                Indonesia 2024, including coordination
-                                related to halal industry participants.
-                            </li>
-
+                            <li>Collected, organized, and validated export-import data for research and analytical purposes.</li>
+                            <li>Supported the preparation of research materials, presentations, and policy-related reports.</li>
+                            <li>Organized datasets and industry information to improve consistency and usability for further analysis.</li>
+                            <li>Supported KNEKS activities at Trade Expo Indonesia 2024, including coordination related to halal industry participants.</li>
                         </ul>
-
-                    </div>
-
+                    </article>
                 </div>
-
             </div>
-
         </section>
-
 
         <!-- PROJECTS -->
         <section class="section" id="projects">
-
             <div class="container">
-
-                <p class="section-label">SELECTED WORK</p>
-
-                <h2 class="section-title">
-                    Projects & case studies.
-                </h2>
+                <p class="section-label">WHAT I'VE BUILT SO FAR</p>
+                <h2 class="section-title">Projects &amp; case studies.</h2>
 
                 <div class="project-grid">
-
-                    <!-- PROJECT 01 -->
-                    <article class="project-card">
-
-                        <div class="project-image">
-                            <span>EXCEL • DATA CLEANING</span>
-                        </div>
-
+                    <article class="project-card data-card">
+                        <div class="project-image data-image"><span>EXCEL • DATA CLEANING</span></div>
                         <div class="project-content">
-
-                            <p class="project-type">
-                                DATA PROCESSING
-                            </p>
-
-                            <h3>
-                                Sales Data Cleaning
-                            </h3>
-
-                            <p>
-                                A practice project focused on transforming
-                                raw sales data into a clean, consistent,
-                                and analysis-ready dataset using Microsoft Excel.
-                            </p>
-
+                            <p class="project-type data-text">DATA PROCESSING</p>
+                            <h3>Sales Data Cleaning</h3>
+                            <p>A practice project focused on transforming raw sales data into a clean, consistent, and analysis-ready dataset using Microsoft Excel.</p>
                             <div class="project-tags">
-                                <span>Excel</span>
-                                <span>Data Cleaning</span>
-                                <span>Data Validation</span>
+                                <span>Excel</span><span>Data Cleaning</span><span>Data Validation</span>
                             </div>
-
-                            <a
-                                href="projects/sales-data-cleaning"
-                                class="project-link"
-                            >
-                                View Case Study →
-                            </a>
-
+                            <a href="/projects/sales-data-cleaning" class="project-link">View Case Study →</a>
                         </div>
-
                     </article>
 
-
-                    <!-- PROJECT 02 -->
-                    <article class="project-card">
-
-                        <div class="project-image">
-                            <span>EXCEL • REPORTING</span>
-                        </div>
-
+                    <article class="project-card data-card">
+                        <div class="project-image data-image"><span>EXCEL • REPORTING</span></div>
                         <div class="project-content">
-
-                            <p class="project-type">
-                                DATA ANALYSIS
-                            </p>
-
-                            <h3>
-                                Sales Dashboard & Reporting
-                            </h3>
-
-                            <p>
-                                An Excel-based reporting project designed
-                                to summarize sales performance through
-                                Pivot Tables, key metrics, and visualizations.
-                            </p>
-
+                            <p class="project-type data-text">DATA ANALYSIS</p>
+                            <h3>Sales Dashboard &amp; Reporting</h3>
+                            <p>An Excel-based reporting project designed to summarize sales performance through Pivot Tables, key metrics, and visualizations.</p>
                             <div class="project-tags">
-                                <span>Excel</span>
-                                <span>Pivot Table</span>
-                                <span>Dashboard</span>
+                                <span>Excel</span><span>Pivot Table</span><span>Dashboard</span>
                             </div>
-
-                            <span class="project-coming">
-                                Coming Soon
-                            </span>
-
+                            <span class="project-coming">Coming Soon</span>
                         </div>
-
                     </article>
 
-
-                    <!-- PROJECT 03 -->
-                    <article class="project-card">
-
-                        <div class="project-image">
-                            <span>RESEARCH • FIELDWORK</span>
-                        </div>
-
+                    <article class="project-card field-card">
+                        <div class="project-image field-image"><span>RESEARCH • FIELDWORK</span></div>
                         <div class="project-content">
-
-                            <p class="project-type">
-                                FIELD RESEARCH
-                            </p>
-
-                            <h3>
-                                Trans Patriot 2025
-                            </h3>
-
-                            <p>
-                                A field research project in Fakfak Timur,
-                                West Papua involving interviews, surveys,
-                                focus group discussions, data processing,
-                                and research documentation.
-                            </p>
-
+                            <p class="project-type field-text">FIELD RESEARCH</p>
+                            <h3>Trans Patriot 2025</h3>
+                            <p>A field research project in Fakfak Timur, West Papua involving interviews, surveys, focus group discussions, data processing, and research documentation.</p>
                             <div class="project-tags">
-                                <span>Research</span>
-                                <span>Survey</span>
-                                <span>Fieldwork</span>
+                                <span>Research</span><span>Survey</span><span>Fieldwork</span>
                             </div>
-
-                            <span class="project-coming">
-                                Coming Soon
-                            </span>
-
+                            <span class="project-coming">Coming Soon</span>
                         </div>
-
                     </article>
-
                 </div>
-
             </div>
-
-        </section>        
-
+        </section>
 
         <!-- SERVICES -->
         <section class="section section-alt" id="services">
-
             <div class="container">
-
                 <p class="section-label">SERVICES</p>
-
-                <h2 class="section-title">
-                    How I can help.
-                </h2>
+                <h2 class="section-title">How I can help.</h2>
 
                 <div class="card-grid">
-
                     <article class="card">
-
-                        <div class="card-number">01</div>
-
-                        <h3>Excel & Data Cleaning</h3>
-
-                        <p>
-                            Cleaning, formatting, organizing, and preparing
-                            raw datasets for further analysis.
-                        </p>
-
+                        <span class="card-number field-text">01</span>
+                        <h3>Excel &amp; Data Cleaning</h3>
+                        <p>Cleaning, formatting, organizing, and preparing raw datasets for further analysis.</p>
                     </article>
 
-
                     <article class="card">
-
-                        <div class="card-number">02</div>
-
+                        <span class="card-number data-text">02</span>
                         <h3>Spreadsheet Reporting</h3>
-
-                        <p>
-                            Creating structured Excel reports, summaries,
-                            Pivot Tables, and simple dashboards.
-                        </p>
-
+                        <p>Creating structured Excel reports, summaries, Pivot Tables, and simple dashboards.</p>
                     </article>
-
 
                     <article class="card">
-
-                        <div class="card-number">03</div>
-
+                        <span class="card-number field-text">03</span>
                         <h3>Research Support</h3>
-
-                        <p>
-                            Supporting data collection, secondary-data
-                            research, tabulation, and research documentation.
-                        </p>
-
+                        <p>Supporting data collection, secondary-data research, tabulation, and research documentation.</p>
                     </article>
-
                 </div>
-
             </div>
-
         </section>
-
 
         <!-- CONTACT -->
         <section class="contact section" id="contact">
-
             <div class="container contact-content">
-
-                <p class="section-label">
-                    GET IN TOUCH
-                </p>
-
-                <h2>
-                    Have a project in mind?
-                </h2>
-
-                <p>
-                    I'm open to opportunities, collaborations,
-                    freelance projects, and professional discussions.
-                </p>
-
+                <p class="section-label">GET IN TOUCH</p>
+                <h2>Have a project in mind?</h2>
+                <p>I'm open to data analyst opportunities, research collaborations, freelance data projects, and professional discussions.</p>
                 <div class="contact-buttons">
-
-                    <a
-                        href="mailto:contact@achnafthariq.com"
-                        class="button primary"
-                    >
-                        Send Email
-                    </a>
-
-                    <a
-                        href="https://www.linkedin.com/in/achnafthariq"
-                        class="button secondary"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        LinkedIn
-                    </a>
-
+                    <a href="mailto:contact@achnafthariq.com" class="button primary">Send Email</a>
+                    <a href="https://www.linkedin.com/in/achnafthariq/" class="button secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </div>
-
             </div>
-
         </section>
 
     </main>
 
-
-    <!-- FOOTER -->
     <footer>
-
         <div class="container footer-content">
-
-            <p>
-                © <span id="year"></span> Achnaf Thariq
-            </p>
-
-            <p>
-                Data • Research • Excel
-            </p>
-
+            <p>© <span id="year">2026</span> Achnaf Thariq</p>
+            <p>Economics • Research • Data Analytics</p>
         </div>
-
     </footer>
 
-
     <script src="script.js"></script>
-
 </body>
 </html>
