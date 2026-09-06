@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Indonesia Macro & Consumer Pulse Dashboard | Achnaf Thariq</title>
+
+    <meta
+        name="description"
+        content="Case study of an automated Excel dashboard for monitoring Indonesia's monetary conditions, exchange rate, consumer confidence, and retail activity using Power Query and VBA."
+    >
+
+    <link rel="canonical" href="https://www.achnafthariq.com/projects/indonesia-macro-consumer-pulse">
+
+    <meta property="og:title" content="Indonesia Macro & Consumer Pulse Dashboard">
+    <meta property="og:description" content="An automated Excel, Power Query, and VBA dashboard for monitoring Indonesian macroeconomic and consumer indicators.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.achnafthariq.com/projects/indonesia-macro-consumer-pulse">
+    <meta property="og:image" content="https://www.achnafthariq.com/images/projects/dashboard_preview.png">
+
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="../favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="../index.html" class="logo">
+                <span class="logo-mark" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span>
+                </span>
+                Achnaf Thariq
+            </a>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navLinks"
+            >
+                ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#experience">Experience</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#services">Services</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main class="case-study">
+
+        <!-- HERO -->
+        <section class="case-hero">
+            <div class="container">
+
+                <a href="../index.html#projects" class="case-back">
+                    ← Back to projects
+                </a>
+
+                <p class="case-eyebrow">
+                    DATA ANALYSIS • EXCEL • POWER QUERY • VBA
+                </p>
+
+                <h1>
+                    Indonesia Macro &amp;<br>
+                    Consumer Pulse Dashboard
+                </h1>
+
+                <p class="case-intro">
+                    An end-to-end analytical project that consolidates Indonesian
+                    macroeconomic and consumer indicators into a refreshable
+                    monthly monitoring dashboard.
+                </p>
+
+                <div class="case-actions">
+                    <a
+                        href="https://github.com/achnafthariq/indonesia-macro-consumer-pulse-dashboard"
+                        class="button primary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View GitHub Repository
+                    </a>
+
+                    <a
+                        href="https://github.com/achnafthariq/indonesia-macro-consumer-pulse-dashboard/blob/main/03_output/Indonesia_Macro_Consumer_Pulse_Dashboard.xlsm"
+                        class="button secondary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Workbook
+                    </a>
+                </div>
+
+                <div class="case-meta">
+                    <div>
+                        <span>ROLE</span>
+                        <strong>Data Analyst</strong>
+                    </div>
+
+                    <div>
+                        <span>TOOLS</span>
+                        <strong>Excel · Power Query · VBA</strong>
+                    </div>
+
+                    <div>
+                        <span>DATA</span>
+                        <strong>Jan 2020 – Aug 2026</strong>
+                    </div>
+
+                    <div>
+                        <span>TYPE</span>
+                        <strong>Self-directed portfolio project</strong>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- DASHBOARD PREVIEW -->
+        <section class="case-dashboard-section">
+            <div class="container">
+
+                <div class="dashboard-frame">
+                    <img
+                        src="../images/projects/dashboard_preview.png"
+                        alt="Indonesia Macro and Consumer Pulse Dashboard showing BI Rate, inflation, JISDOR, consumer confidence, and retail sales"
+                    >
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- OVERVIEW -->
+        <section class="section">
+            <div class="container case-content-grid">
+
+                <div>
+                    <p class="section-label">01 / Overview</p>
+                    <h2 class="case-section-title">
+                        Turning fragmented economic data into one monitoring view.
+                    </h2>
+                </div>
+
+                <div class="case-copy">
+                    <p>
+                        Indonesian economic indicators are released through different
+                        datasets, frequencies, and publication schedules. Monitoring
+                        them together requires more than simply placing values in one
+                        spreadsheet.
+                    </p>
+
+                    <p>
+                        I designed this project to simulate a recurring analytical
+                        workflow for a strategy or business analytics team that needs
+                        a concise view of monetary conditions, inflation, exchange-rate
+                        movements, consumer sentiment, and retail activity.
+                    </p>
+
+                    <p>
+                        The result is a structured pipeline from raw source files to
+                        cleaned monthly datasets, analytical metrics, management
+                        commentary, and an automated Excel dashboard.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- BUSINESS QUESTIONS -->
+        <section class="section section-alt">
+            <div class="container">
+
+                <p class="section-label">02 / Business Questions</p>
+                <h2 class="case-section-title">
+                    What does management need to know?
+                </h2>
+
+                <div class="question-grid">
+
+                    <article class="case-card">
+                        <span>01</span>
+                        <h3>Monetary Policy</h3>
+                        <p>
+                            What is the current BI Rate stance, and how has it changed?
+                        </p>
+                    </article>
+
+                    <article class="case-card">
+                        <span>02</span>
+                        <h3>Inflation</h3>
+                        <p>
+                            Are price pressures increasing or easing?
+                        </p>
+                    </article>
+
+                    <article class="case-card">
+                        <span>03</span>
+                        <h3>Currency</h3>
+                        <p>
+                            Is the rupiah strengthening or weakening against the US dollar?
+                        </p>
+                    </article>
+
+                    <article class="case-card">
+                        <span>04</span>
+                        <h3>Consumer Confidence</h3>
+                        <p>
+                            Are consumers still optimistic, and is confidence improving?
+                        </p>
+                    </article>
+
+                    <article class="case-card">
+                        <span>05</span>
+                        <h3>Retail Activity</h3>
+                        <p>
+                            Is retail activity expanding or contracting?
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- DATA -->
+        <section class="section">
+            <div class="container">
+
+                <p class="section-label">03 / Data</p>
+                <h2 class="case-section-title">
+                    Five indicators, different reporting structures.
+                </h2>
+
+                <div class="case-table-wrap">
+                    <table class="case-table">
+                        <thead>
+                            <tr>
+                                <th>Indicator</th>
+                                <th>Producer</th>
+                                <th>Raw Frequency</th>
+                                <th>Monthly Treatment</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>BI Rate</td>
+                                <td>Bank Indonesia</td>
+                                <td>Policy decisions</td>
+                                <td>Latest decision in each month</td>
+                            </tr>
+
+                            <tr>
+                                <td>Inflation YoY</td>
+                                <td>Bank Indonesia</td>
+                                <td>Monthly</td>
+                                <td>Standardized percentage</td>
+                            </tr>
+
+                            <tr>
+                                <td>JISDOR</td>
+                                <td>Bank Indonesia</td>
+                                <td>Daily</td>
+                                <td>Monthly average</td>
+                            </tr>
+
+                            <tr>
+                                <td>Consumer Confidence</td>
+                                <td>Bank Indonesia</td>
+                                <td>Monthly</td>
+                                <td>Published index value</td>
+                            </tr>
+
+                            <tr>
+                                <td>Retail Sales Growth YoY</td>
+                                <td>Bank Indonesia</td>
+                                <td>Monthly</td>
+                                <td>Published YoY growth</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- PIPELINE -->
+        <section class="section section-alt">
+            <div class="container">
+
+                <p class="section-label">04 / Workflow</p>
+                <h2 class="case-section-title">
+                    A layered, refreshable analytical pipeline.
+                </h2>
+
+                <div class="case-pipeline">
+
+                    <div>
+                        <span>01</span>
+                        <strong>Raw Data</strong>
+                        <p>Source files preserved as the original reference.</p>
+                    </div>
+
+                    <div class="pipeline-arrow">→</div>
+
+                    <div>
+                        <span>02</span>
+                        <strong>Power Query Staging</strong>
+                        <p>Cleaning, types, naming, and source-specific transformations.</p>
+                    </div>
+
+                    <div class="pipeline-arrow">→</div>
+
+                    <div>
+                        <span>03</span>
+                        <strong>Monthly Master</strong>
+                        <p>All indicators merged using a standardized month key.</p>
+                    </div>
+
+                    <div class="pipeline-arrow">→</div>
+
+                    <div>
+                        <span>04</span>
+                        <strong>Analytics</strong>
+                        <p>MoM changes, 12-month comparison, and interpretation logic.</p>
+                    </div>
+
+                    <div class="pipeline-arrow">→</div>
+
+                    <div>
+                        <span>05</span>
+                        <strong>Dashboard</strong>
+                        <p>VBA-generated KPI cards, charts, and executive readout.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- KEY DECISIONS -->
+        <section class="section">
+            <div class="container">
+
+                <p class="section-label">05 / Analytical Decisions</p>
+                <h2 class="case-section-title">
+                    The important part was not just cleaning the data.
+                </h2>
+
+                <div class="decision-grid">
+
+                    <article class="case-card">
+                        <p class="decision-label">BI RATE</p>
+                        <h3>Latest decision, not monthly average.</h3>
+                        <p>
+                            When multiple policy decisions occurred within one month,
+                            the last decision was retained to represent the month-end
+                            policy stance.
+                        </p>
+                    </article>
+
+                    <article class="case-card">
+                        <p class="decision-label">JISDOR</p>
+                        <h3>Daily observations aggregated to a monthly average.</h3>
+                        <p>
+                            Partial September 2026 observations were excluded so the
+                            monthly figure would not mix complete and incomplete periods.
+                        </p>
+                    </article>
+
+                    <article class="case-card">
+                        <p class="decision-label">PUBLICATION LAG</p>
+                        <h3>Unavailable data stays unavailable.</h3>
+                        <p>
+                            IKK and retail data were not forward-filled. Each KPI
+                            retains its own latest published period.
+                        </p>
+                    </article>
+
+                    <article class="case-card">
+                        <p class="decision-label">INTERPRETATION</p>
+                        <h3>Direction and context are separated.</h3>
+                        <p>
+                            For example, positive JISDOR MoM means USD/IDR increased,
+                            which is interpreted as rupiah weakening.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- OUTPUT -->
+        <section class="section section-alt">
+            <div class="container case-content-grid">
+
+                <div>
+                    <p class="section-label">06 / Output</p>
+                    <h2 class="case-section-title">
+                        Management-focused rather than chart-focused.
+                    </h2>
+                </div>
+
+                <div class="case-copy">
+                    <p>
+                        The dashboard combines five KPI cards with trend charts and
+                        an executive readout. Each KPI displays the latest available
+                        period instead of assuming every indicator has the same
+                        publication date.
+                    </p>
+
+                    <p>
+                        Retail Sales Growth uses positive and negative bar colors to
+                        separate expansion from contraction. Consumer Confidence
+                        includes the 100-point optimism threshold, while the JISDOR
+                        chart explicitly follows the convention that a higher USD/IDR
+                        level represents a weaker rupiah.
+                    </p>
+
+                    <p>
+                        VBA is used only as the automation and presentation layer.
+                        The underlying cleaning and transformations remain in
+                        Power Query so the workflow stays auditable and maintainable.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- QA -->
+        <section class="section">
+            <div class="container">
+
+                <p class="section-label">07 / Quality Assurance</p>
+                <h2 class="case-section-title">
+                    Tested beyond whether the dashboard “looks right.”
+                </h2>
+
+                <div class="qa-grid">
+
+                    <div class="qa-item">
+                        <strong>80</strong>
+                        <span>monthly master rows</span>
+                    </div>
+
+                    <div class="qa-item">
+                        <strong>0</strong>
+                        <span>duplicate months</span>
+                    </div>
+
+                    <div class="qa-item">
+                        <strong>5</strong>
+                        <span>core indicators</span>
+                    </div>
+
+                    <div class="qa-item">
+                        <strong>PASS</strong>
+                        <span>final UAT</span>
+                    </div>
+
+                </div>
+
+                <div class="case-copy qa-copy">
+                    <p>
+                        Testing covered source periods, row counts, missing values,
+                        publication lags, KPI reconciliation, chart output, refresh
+                        execution, dynamic commentary, and persistence of the VBA
+                        refresh workflow.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- LEARNINGS -->
+        <section class="section section-alt">
+            <div class="container case-content-grid">
+
+                <div>
+                    <p class="section-label">08 / What I Learned</p>
+                    <h2 class="case-section-title">
+                        A dashboard is only the visible end of the work.
+                    </h2>
+                </div>
+
+                <div class="case-copy">
+                    <p>
+                        This project reinforced the importance of defining each
+                        indicator before visualizing it. A technically correct chart
+                        can still be misleading if frequency, unit, publication lag,
+                        or direction of interpretation is handled incorrectly.
+                    </p>
+
+                    <p>
+                        It also gave me practical experience separating the data
+                        pipeline, analytical logic, and presentation layer rather
+                        than trying to solve everything in one worksheet.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CTA -->
+        <section class="case-cta">
+            <div class="container">
+
+                <p class="section-label">Project files</p>
+
+                <h2>
+                    Explore the workbook, VBA source, and methodology.
+                </h2>
+
+                <div class="case-actions">
+                    <a
+                        href="https://github.com/achnafthariq/indonesia-macro-consumer-pulse-dashboard"
+                        class="button primary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Open GitHub Repository
+                    </a>
+
+                    <a
+                        href="../index.html#projects"
+                        class="button secondary"
+                    >
+                        Back to Projects
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Achnaf Thariq</p>
+            <p>Field Research • Data Analytics</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+
+</body>
+</html>
