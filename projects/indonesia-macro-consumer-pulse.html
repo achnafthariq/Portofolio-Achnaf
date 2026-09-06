@@ -18,6 +18,12 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.achnafthariq.com/projects/indonesia-macro-consumer-pulse">
     <meta property="og:image" content="https://www.achnafthariq.com/images/projects/dashboard_preview.png">
+    <meta property="og:site_name" content="Achnaf Thariq">
+    <meta property="og:image:alt" content="Indonesia Macro and Consumer Pulse Dashboard by Achnaf Thariq">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Indonesia Macro &amp; Consumer Pulse Dashboard | Achnaf Thariq">
+    <meta name="twitter:description" content="An automated Excel, Power Query, and VBA dashboard for monitoring Indonesian macroeconomic and consumer indicators.">
+    <meta name="twitter:image" content="https://www.achnafthariq.com/images/projects/dashboard_preview.png">
 
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
     <link rel="alternate icon" href="../favicon.png">
@@ -34,13 +40,7 @@
     <header class="header">
         <nav class="navbar container">
 
-            <a href="../index.html" class="logo">
-                <span class="logo-mark" aria-hidden="true">
-                    <span></span><span></span><span></span><span></span>
-                </span>
-                Achnaf Thariq
-            </a>
-
+            <a href="../index.html#home" class="logo" aria-label="Achnaf Thariq home">AT.</a>
             <button
                 class="menu-button"
                 id="menuButton"
@@ -52,6 +52,7 @@
             </button>
 
             <div class="nav-links" id="navLinks">
+                <a href="../index.html#home">Home</a>
                 <a href="../index.html#about">About</a>
                 <a href="../index.html#experience">Experience</a>
                 <a href="../index.html#projects">Projects</a>
@@ -83,9 +84,9 @@
                 </h1>
 
                 <p class="case-intro">
-                    An end-to-end analytical project that consolidates Indonesian
-                    macroeconomic and consumer indicators into a refreshable
-                    monthly monitoring dashboard.
+                    A refreshable Excel dashboard that brings together Indonesian
+                    monetary, exchange-rate, consumer confidence, and retail indicators
+                    into one structured monthly monitoring workflow.
                 </p>
 
                 <div class="case-actions">
@@ -156,29 +157,29 @@
                 <div>
                     <p class="section-label">01 / Overview</p>
                     <h2 class="case-section-title">
-                        Turning fragmented economic data into one monitoring view.
+                        Turning fragmented indicators into one consistent monitoring view.
                     </h2>
                 </div>
 
                 <div class="case-copy">
                     <p>
-                        Indonesian economic indicators are released through different
-                        datasets, frequencies, and publication schedules. Monitoring
-                        them together requires more than simply placing values in one
-                        spreadsheet.
+                        Indonesian macroeconomic and consumer indicators are published
+                        across different datasets, frequencies, and release schedules.
+                        Bringing them into one monitoring view requires consistent
+                        treatment of time periods, units, aggregation rules, and missing data.
                     </p>
 
                     <p>
-                        I designed this project to simulate a recurring analytical
-                        workflow for a strategy or business analytics team that needs
-                        a concise view of monetary conditions, inflation, exchange-rate
-                        movements, consumer sentiment, and retail activity.
+                        I built this project to simulate a recurring analytical workflow
+                        for a strategy or business analytics team that needs to monitor
+                        monetary conditions, inflation, exchange-rate movements, consumer
+                        confidence, and retail activity in one place.
                     </p>
 
                     <p>
-                        The result is a structured pipeline from raw source files to
-                        cleaned monthly datasets, analytical metrics, management
-                        commentary, and an automated Excel dashboard.
+                        The final workflow connects raw source files, Power Query
+                        transformations, monthly analytical metrics, executive commentary,
+                        and an automated Excel dashboard.
                     </p>
                 </div>
 
@@ -192,7 +193,7 @@
 
                 <p class="section-label">02 / Business Questions</p>
                 <h2 class="case-section-title">
-                    What does management need to know?
+                    What does the dashboard need to answer?
                 </h2>
 
                 <div class="question-grid">
@@ -201,7 +202,8 @@
                         <span>01</span>
                         <h3>Monetary Policy</h3>
                         <p>
-                            What is the current BI Rate stance, and how has it changed?
+                            What is the current BI Rate stance, and how has it changed
+                            from the previous month and twelve months earlier?
                         </p>
                     </article>
 
@@ -209,7 +211,8 @@
                         <span>02</span>
                         <h3>Inflation</h3>
                         <p>
-                            Are price pressures increasing or easing?
+                            Are inflationary pressures increasing or easing compared
+                            with recent periods?
                         </p>
                     </article>
 
@@ -217,7 +220,8 @@
                         <span>03</span>
                         <h3>Currency</h3>
                         <p>
-                            Is the rupiah strengthening or weakening against the US dollar?
+                            Is the rupiah strengthening or weakening against the US dollar,
+                            both month over month and year over year?
                         </p>
                     </article>
 
@@ -225,7 +229,8 @@
                         <span>04</span>
                         <h3>Consumer Confidence</h3>
                         <p>
-                            Are consumers still optimistic, and is confidence improving?
+                            Are consumers still optimistic, and is confidence improving
+                            or weakening over time?
                         </p>
                     </article>
 
@@ -233,7 +238,8 @@
                         <span>05</span>
                         <h3>Retail Activity</h3>
                         <p>
-                            Is retail activity expanding or contracting?
+                            Is retail activity expanding or contracting, and has momentum
+                            improved from the previous month?
                         </p>
                     </article>
 
@@ -249,7 +255,7 @@
 
                 <p class="section-label">03 / Data</p>
                 <h2 class="case-section-title">
-                    Five indicators, different reporting structures.
+                    Five indicators with different frequencies and reporting conventions.
                 </h2>
 
                 <div class="case-table-wrap">
@@ -257,7 +263,7 @@
                         <thead>
                             <tr>
                                 <th>Indicator</th>
-                                <th>Producer</th>
+                                <th>Source Used</th>
                                 <th>Raw Frequency</th>
                                 <th>Monthly Treatment</th>
                             </tr>
@@ -287,19 +293,28 @@
 
                             <tr>
                                 <td>Consumer Confidence</td>
-                                <td>Bank Indonesia</td>
+                                <td>Trading Economics</td>
                                 <td>Monthly</td>
                                 <td>Published index value</td>
                             </tr>
 
                             <tr>
                                 <td>Retail Sales Growth YoY</td>
-                                <td>Bank Indonesia</td>
+                                <td>Trading Economics</td>
                                 <td>Monthly</td>
                                 <td>Published YoY growth</td>
                             </tr>
                         </tbody>
                     </table>
+                </div>
+
+                <div class="case-copy data-note">
+                    <p>
+                        The source files were preserved as reference inputs, while all
+                        cleaning, standardization, aggregation, and monthly alignment were
+                        handled in Power Query. Publication lags were retained rather than
+                        forward-filled.
+                    </p>
                 </div>
 
             </div>
@@ -374,38 +389,41 @@
 
                     <article class="case-card">
                         <p class="decision-label">BI RATE</p>
-                        <h3>Latest decision, not monthly average.</h3>
+                        <h3>Represent monthly policy using the latest decision.</h3>
                         <p>
-                            When multiple policy decisions occurred within one month,
-                            the last decision was retained to represent the month-end
-                            policy stance.
+                            When multiple policy decisions occurred within the same month,
+                            I retained the final decision to represent the prevailing policy
+                            stance at month-end rather than averaging policy-rate events.
                         </p>
                     </article>
 
                     <article class="case-card">
                         <p class="decision-label">JISDOR</p>
-                        <h3>Daily observations aggregated to a monthly average.</h3>
+                        <h3>Aggregate daily exchange-rate observations consistently.</h3>
                         <p>
-                            Partial September 2026 observations were excluded so the
-                            monthly figure would not mix complete and incomplete periods.
+                            Daily JISDOR observations were converted into monthly averages.
+                            Partial September 2026 data was excluded to avoid comparing
+                            incomplete periods with fully observed months.
                         </p>
                     </article>
 
                     <article class="case-card">
                         <p class="decision-label">PUBLICATION LAG</p>
-                        <h3>Unavailable data stays unavailable.</h3>
+                        <h3>Preserve publication lags instead of filling missing periods.</h3>
                         <p>
-                            IKK and retail data were not forward-filled. Each KPI
-                            retains its own latest published period.
+                            Consumer confidence and retail data were not forward-filled.
+                            Each KPI retains its own latest published period so the dashboard
+                            reflects actual data availability.
                         </p>
                     </article>
 
                     <article class="case-card">
                         <p class="decision-label">INTERPRETATION</p>
-                        <h3>Direction and context are separated.</h3>
+                        <h3>Separate numerical movement from economic interpretation.</h3>
                         <p>
-                            For example, positive JISDOR MoM means USD/IDR increased,
-                            which is interpreted as rupiah weakening.
+                            For JISDOR, a higher USD/IDR level means a weaker rupiah.
+                            The dashboard therefore distinguishes the direction of the metric
+                            from the economic meaning of that movement.
                         </p>
                     </article>
 
@@ -422,30 +440,97 @@
                 <div>
                     <p class="section-label">06 / Output</p>
                     <h2 class="case-section-title">
-                        Management-focused rather than chart-focused.
+                        Designed for monitoring, not just visualization.
                     </h2>
                 </div>
 
                 <div class="case-copy">
                     <p>
-                        The dashboard combines five KPI cards with trend charts and
-                        an executive readout. Each KPI displays the latest available
-                        period instead of assuming every indicator has the same
-                        publication date.
+                        The final dashboard brings five indicators into a single monitoring
+                        view using KPI cards, trend charts, and an executive readout. Each KPI
+                        shows its own latest available period so publication lags remain visible
+                        rather than being hidden behind a common reporting date.
                     </p>
 
                     <p>
-                        Retail Sales Growth uses positive and negative bar colors to
-                        separate expansion from contraction. Consumer Confidence
-                        includes the 100-point optimism threshold, while the JISDOR
-                        chart explicitly follows the convention that a higher USD/IDR
-                        level represents a weaker rupiah.
+                        The visual layer is designed to make interpretation easier. Consumer
+                        Confidence retains the 100-point optimism threshold, Retail Sales Growth
+                        distinguishes positive and negative growth, and JISDOR is interpreted
+                        using the convention that a higher USD/IDR level represents a weaker rupiah.
                     </p>
 
                     <p>
-                        VBA is used only as the automation and presentation layer.
-                        The underlying cleaning and transformations remain in
-                        Power Query so the workflow stays auditable and maintainable.
+                        Power Query handles the underlying data transformation, while VBA is
+                        used for dashboard generation, refresh automation, and presentation.
+                        This separation keeps the analytical pipeline traceable while allowing
+                        the final output to remain practical for recurring monthly monitoring.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- KEY INSIGHTS -->
+        <section class="section">
+            <div class="container">
+
+                <p class="section-label">07 / Key Insights</p>
+
+                <h2 class="case-section-title">
+                    What the latest data suggests.
+                </h2>
+
+                <div class="decision-grid">
+
+                    <article class="case-card">
+                        <p class="decision-label">MONETARY POLICY</p>
+                        <h3>BI Rate held at 5.75% in August 2026.</h3>
+                        <p>
+                            The policy rate was unchanged from July, while remaining
+                            0.75 percentage points above its August 2025 level.
+                        </p>
+                    </article>
+
+                    <article class="case-card">
+                        <p class="decision-label">INFLATION</p>
+                        <h3>Inflation rose to 3.19% YoY.</h3>
+                        <p>
+                            August inflation increased by 0.31 percentage points from
+                            the previous month and was 0.88 percentage points higher
+                            than twelve months earlier.
+                        </p>
+                    </article>
+
+                    <article class="case-card">
+                        <p class="decision-label">EXCHANGE RATE</p>
+                        <h3>Monthly rupiah pressure eased, but the annual comparison remained weaker.</h3>
+                        <p>
+                            Average JISDOR declined by around 1.0% MoM in August,
+                            indicating monthly rupiah strengthening. However, USD/IDR
+                            remained about 9.3% higher than twelve months earlier.
+                        </p>
+                    </article>
+
+                    <article class="case-card">
+                        <p class="decision-label">CONSUMER PULSE</p>
+                        <h3>Confidence remained optimistic while retail growth stayed negative.</h3>
+                        <p>
+                            Consumer Confidence stood at 116.8 in July, remaining above
+                            the 100-point optimism threshold. Retail Sales Growth was
+                            -3.0% YoY in June despite improving from the previous month.
+                        </p>
+                    </article>
+
+                </div>
+
+                <div class="case-copy insight-note">
+                    <p>
+                        The indicators are released on different publication schedules,
+                        so each observation above uses its latest available period.
+                        June 2026 is the latest month with complete observations across
+                        all five indicators and should be used for direct cross-indicator
+                        comparison.
                     </p>
                 </div>
 
@@ -457,7 +542,7 @@
         <section class="section">
             <div class="container">
 
-                <p class="section-label">07 / Quality Assurance</p>
+                <p class="section-label">08 / Quality Assurance</p>
                 <h2 class="case-section-title">
                     Tested beyond whether the dashboard “looks right.”
                 </h2>
@@ -488,10 +573,17 @@
 
                 <div class="case-copy qa-copy">
                     <p>
-                        Testing covered source periods, row counts, missing values,
-                        publication lags, KPI reconciliation, chart output, refresh
-                        execution, dynamic commentary, and persistence of the VBA
-                        refresh workflow.
+                        Quality assurance covered source-period validation, row counts,
+                        duplicate-month checks, missing-value review, publication lags,
+                        KPI reconciliation against the underlying data, chart output,
+                        refresh execution, and dynamic commentary.
+                    </p>
+
+                    <p>
+                        I also tested whether the VBA refresh workflow continued to work
+                        after reopening the workbook, so the final dashboard remained
+                        usable as a recurring monthly monitoring tool rather than a
+                        one-time static report.
                     </p>
                 </div>
 
@@ -504,25 +596,33 @@
             <div class="container case-content-grid">
 
                 <div>
-                    <p class="section-label">08 / What I Learned</p>
+                    <p class="section-label">09 / What I Learned</p>
                     <h2 class="case-section-title">
-                        A dashboard is only the visible end of the work.
+                      A dashboard is only the visible end of the work.
                     </h2>
                 </div>
 
                 <div class="case-copy">
-                    <p>
-                        This project reinforced the importance of defining each
-                        indicator before visualizing it. A technically correct chart
-                        can still be misleading if frequency, unit, publication lag,
-                        or direction of interpretation is handled incorrectly.
-                    </p>
+                  <p>
+                      This project reinforced that reliable analysis starts before the chart.
+                      Each indicator required a clear definition of frequency, unit,
+                      publication timing, aggregation method, and interpretation before it
+                      could be combined into one dashboard.
+                  </p>
 
-                    <p>
-                        It also gave me practical experience separating the data
-                        pipeline, analytical logic, and presentation layer rather
-                        than trying to solve everything in one worksheet.
-                    </p>
+                  <p>
+                      I also learned to separate the workflow into distinct layers:
+                      source data, Power Query transformation, analytical logic, and
+                      presentation. This made the process easier to validate, troubleshoot,
+                      refresh, and explain to another user.
+                  </p>
+
+                  <p>
+                      Most importantly, the project showed me that a useful dashboard is not
+                      defined by the number of charts it contains, but by whether the data,
+                      metrics, and commentary consistently answer the questions the dashboard
+                      was designed to monitor.
+                  </p>
                 </div>
 
             </div>
@@ -550,6 +650,15 @@
                     </a>
 
                     <a
+                        href="https://github.com/achnafthariq/indonesia-macro-consumer-pulse-dashboard/blob/main/03_output/Indonesia_Macro_Consumer_Pulse_Dashboard.xlsm"
+                        class="button secondary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Workbook
+                    </a>
+
+                    <a
                         href="../index.html#projects"
                         class="button secondary"
                     >
@@ -566,7 +675,7 @@
     <footer>
         <div class="container footer-content">
             <p>© <span id="year"></span> Achnaf Thariq</p>
-            <p>Field Research • Data Analytics</p>
+            <p>Economics • Research • Data Analytics</p>
         </div>
     </footer>
 
